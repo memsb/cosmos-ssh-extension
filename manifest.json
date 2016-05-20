@@ -1,0 +1,39 @@
+{
+  "name": "Cosmos SSH",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "An extension to enable single click ssh login to Cosmos instances",
+  "homepage_url": "http://www.bbc.co.uk/programmes",
+  "background": {
+    "scripts": [
+      "jquery-2.2.3.min.js",
+      "cosmos-ssh.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://admin.live.bbc.co.uk/cosmos/env/*/component/*/instances"
+      ],
+      "js": [
+        "jquery-2.2.3.min.js",
+        "cosmos-ssh.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_title": "Cosmos SSH"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
