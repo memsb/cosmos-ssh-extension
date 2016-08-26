@@ -6,7 +6,8 @@
   "homepage_url": "http://www.bbc.co.uk/programmes",
   "background": {
     "scripts": [
-      "jquery-2.2.3.min.js",
+      "clipboard.min.js",
+      "jquery-3.1.0.slim.js",
       "cosmos-ssh.js"
     ],
     "persistent": true
@@ -17,7 +18,8 @@
         "https://admin.live.bbc.co.uk/cosmos/env/*/component/*/instances"
       ],
       "js": [
-        "jquery-2.2.3.min.js",
+        "clipboard.min.js",
+        "jquery-3.1.0.slim.js",
         "cosmos-ssh.js"
       ],
       "run_at": "document_end"
